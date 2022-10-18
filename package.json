@@ -1,15 +1,19 @@
 {
-  "name": "vsc---portfolio",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "cozy-habit.github.io"
-  },
-  "author": "Sophia Precker",
-  "license": "ISC"
+    "name": "vsc---portfolio",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "sass-watch": "node-sass  --watch public/scss/style.scss public/css/style.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "cozy-habit.github.io"
+    },
+    "author": "Sophia Precker",
+    "license": "ISC",
+    "dependencies": {
+        "node-sass": "^7.0.3"
+    }
 }
