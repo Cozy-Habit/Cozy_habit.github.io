@@ -1,0 +1,15 @@
+:root {
+    //anscheinend kann dadurch jede andere scss Datei auf diese Variablen zugreifen
+    //Basics
+    --white: rgb(255, 255, 255);
+    --black: hsl(0, 0%, 12%);
+    --brown: hsl(29, 30%, 61%);
+    --light-brown: hsl(30, 63%, 70%);
+    //Project accents
+    --sage: hsl(138, 21%, 88%);
+    --light-yellow: hsl(40, 43%, 96%);
+    //Properties
+    --background-color: var(--white);
+    --text-color: var(--black);
+    --buttons: var(--white);
+}

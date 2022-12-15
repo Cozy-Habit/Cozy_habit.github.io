@@ -1,19 +1,29 @@
 {
-    "name": "vsc---portfolio",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "sass-watch": "node-sass --no-source-map --watch public/style.scss public/style.css"
-    },
-    "repository": {
-        "type": "git",
-        "url": "cozy-habit.github.io"
-    },
-    "author": "Sophia Precker",
-    "license": "ISC",
-    "dependencies": {
-        "node-sass": "^7.0.3"
-    }
+  "name": "cozy_habit.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cozy-Habit/cozy-habit.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cozy-Habit/cozy-habit.github.io/issues"
+  },
+  "homepage": "https://github.com/Cozy-Habit/cozy-habit.github.io#readme",
+  "dependencies": {
+    "browser-sync": "^2.27.10",
+    "cssnano": "^5.1.14",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.56.2"
+  }
 }
