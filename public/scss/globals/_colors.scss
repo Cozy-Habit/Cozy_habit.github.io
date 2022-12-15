@@ -4,7 +4,7 @@
     --white: rgb(255, 255, 255);
     --black: hsl(0, 0%, 12%);
     --brown: hsl(29, 30%, 61%);
-    --light-brown: hsl(30, 63%, 70%);
+    --light-brown: hsl(29, 63%, 82%);
     //Project accents
     --sage: hsl(138, 21%, 88%);
     --light-yellow: hsl(40, 43%, 96%);
@@ -12,4 +12,5 @@
     --background-color: var(--white);
     --text-color: var(--black);
     --buttons: var(--white);
+    --buttons-hover: var(--black);
 }

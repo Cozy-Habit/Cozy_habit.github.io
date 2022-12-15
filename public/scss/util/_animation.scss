@@ -1,0 +1,20 @@
+@keyframes fadeIn {
+    from {
+        top: 0;
+    }
+    to {
+        top: -10px;
+    }
+}
+
+@keyframes wobble {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

@@ -1,11 +1,27 @@
 @forward 'globals'; //name of folder
+@forward 'util';
 .button {
+    display: inline-block;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     border-radius: 37px;
     background-color: var(--buttons);
     font-weight: 800;
     font-size: 1.25rem;
     padding: 14px 20px 14px 20px;
+    transition: 0.5s;
+    &:hover {
+        position: relative;
+        top: -10px; //This needs to be added so that it stays at the top at the end of animation
+        animation: fadeIn 0.5s;
+        background-color: var(--buttons-hover);
+        color: var(--white);
+    }
+}
+
+//Icons for LinkedIn, Mail, GitHub
+.socials {
+    display: flex;
+    gap: 14px;
 }
 
 body {
@@ -23,6 +39,9 @@ header {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     position: sticky;
     top: 0;
+    nav {
+        padding: 0px 20px 0px 20px;
+    }
 }
 
 svg {
@@ -33,20 +52,106 @@ svg {
     }
 }
 
-.hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 60px;
-    & img {
-        width: 272px;
-    }
-}
-
 main {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: auto; //So that it's centered in body
+    padding: 40px 0px 120px 0px;
     gap: 133px;
     max-width: 302px;
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        gap: 108px;
+        .project>* {
+            margin-top: 25px;
+        }
+    }
 }
+
+.project-img {
+    width: 100%;
+    border-radius: 19px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    .icon-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        width: 81px;
+        & .skill-icon {
+            width: 53px;
+        }
+    }
+    span {
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    & .profile-img {
+        width: 272px;
+    }
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        .highlight {
+            //color: var(--brown);
+            font-weight: 900;
+            //text-shadow: 0px 0px 2px var(--brown);
+        }
+    }
+    & .arrow-img {
+        width: 50px;
+        animation: wobble 1.7s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+    }
+}
+
+.cite-container {
+    text-align: center;
+    .fancy-dots {
+        display: inline-block;
+        font-style: normal;
+        font-size: 5rem;
+        color: var(--light-brown);
+        padding-bottom: 56px;
+        line-height: 0.8;
+    }
+    p {
+        font-style: italic;
+        padding-bottom: 56px;
+        font-weight: 500;
+        span {
+            font-weight: 300;
+        }
+    }
+}
+
+footer {
+    background-color: var(--white);
+    box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.25);
+    padding: 33px 0px 33px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+//714px
+@media (min-width: 44.6em) {}
+
+//997px
+@media (min-width: 62.3em) {}
