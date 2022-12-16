@@ -1,3 +1,5 @@
 -add lazy loading
 -add animation to keep the viewer interested (subtle moves of content), maybe even small particle gif in the background)
 -add nav outline on click with js
+-menu button with js
+-fix button bug
