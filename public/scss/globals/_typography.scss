@@ -28,6 +28,8 @@
     }
     a {
         cursor: pointer;
+        text-decoration: none;
+        color: var(--text);
     }
 }
 
@@ -38,7 +40,15 @@
 }
 
 //714px
-@media (min-width: 44.6em) {}
+@media (min-width: 44.6em) {
+    h1 {
+        font-size: 2.5rem; //40px
+    }
+}
 
 //997px
-@media (min-width: 62.3em) {}
+@media (min-width: 62.3em) {
+    h1 {
+        font-size: 2.65rem; //45.28px
+    }
+}
