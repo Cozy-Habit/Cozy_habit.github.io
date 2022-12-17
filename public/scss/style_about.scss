@@ -53,7 +53,7 @@ header {
         align-items: center;
         gap: 40px;
         inset: 0 0 0 0%; //lol omg what is that sourcery?
-        background: hsl(0 0 100% / 0.5);
+        background-color: rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(12px);
         font-size: 2rem;
         transform: translateX(100%);
@@ -80,6 +80,14 @@ header {
     }
     .menu {
         width: 45px;
+    }
+}
+
+svg {
+    fill: var(--black);
+    transition: 0.4s;
+    &:hover {
+        fill: var(--light-brown);
     }
 }
 
