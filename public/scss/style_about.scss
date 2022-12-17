@@ -153,10 +153,20 @@ footer {
     }
     header {
         justify-content: space-between;
-        nav {
+        .menu {
+            display: none;
+        }
+        .mobile-nav-toggle {
+            display: none;
+        }
+        .primary-navigation {
+            position: unset;
             display: inline;
+            background-color: transparent;
+            inset: unset;
             font-size: 1.2rem;
             font-weight: 500;
+            transform: unset;
             a {
                 padding: 10px 20px;
                 border: 2px solid var(--white); //so that it won't wobble while hovering
@@ -167,11 +177,6 @@ footer {
                 margin-left: 40px;
             }
             a:hover {
-                padding: 10px 26px;
-                border: 2px solid var(--black);
-                border-radius: 84px;
-            }
-            .active {
                 padding: 10px 26px;
                 border: 2px solid var(--black);
                 border-radius: 84px;
