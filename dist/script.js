@@ -1,2 +1,2 @@
-
+console.log("Hello");const nav=document.querySelector(".primary-navigation"),navToggle=document.querySelector(".mobile-nav-toggle");navToggle.addEventListener("click",(()=>{const e=nav.getAttribute("data-visible");"false"===e?(nav.setAttribute("data-visible",!0),navToggle.setAttribute("aria-expanded",!0)):"true"===e&&(nav.setAttribute("data-visible",!1),navToggle.setAttribute("aria-expanded",!1))}));
 //# sourceMappingURL=script.js.map
