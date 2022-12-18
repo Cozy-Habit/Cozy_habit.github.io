@@ -58,18 +58,21 @@ window.addEventListener('scroll', () => {
 //FOR MENU VISIBILITY BUTTON
 const nav = document.querySelector(".primary-navigation");
 const navToggle = document.querySelector(".mobile-nav-toggle");
+const sidebar = document.querySelector("aside");
 
 navToggle.addEventListener("click", () => {
+    console.log("funktioniert");
     const visibility = nav.getAttribute('data-visible');
 
     if (visibility === "false") {
         nav.setAttribute('data-visible', true);
         navToggle.setAttribute('aria-expanded', true);
+        sidebar.style.zIndex = "-1";
 
     } else if (visibility === "true") {
         nav.setAttribute('data-visible', false);
         navToggle.setAttribute('aria-expanded', false);
-
+        sidebar.style.zIndex = "1";
     }
 })
 
