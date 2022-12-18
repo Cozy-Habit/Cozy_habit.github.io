@@ -10,22 +10,22 @@ const buttonHabitual = document.querySelector("#habitual");
 
 
 menuHome.addEventListener("click", () => {
-    window.location.replace("http://localhost:3000/");
+    window.location.replace("https://cozy-habit.github.io/");
 })
 menuWork.addEventListener("click", () => {
-    window.location.replace("http://localhost:3000/#mywork");
+    window.location.replace("https://cozy-habit.github.io/#mywork");
 })
 menuAbout.addEventListener("click", () => {
-    window.location.replace("http://localhost:3000/about.html");
+    window.location.replace("https://cozy-habit.github.io/about.html");
 })
 if (buttonWork) { //Necessary if button doesn't exist in a current html document that uses this script
     buttonWork.addEventListener("click", () => {
-        window.location.replace("http://localhost:3000/#mywork");
+        window.location.replace("https://cozy-habit.github.io/#mywork");
     })
 }
 if (buttonHabitual) {
     buttonHabitual.addEventListener("click", () => {
-        window.location.replace("http://localhost:3000/habitual.html");
+        window.location.replace("https://cozy-habit.github.io/habitual.html");
     })
 }
 
