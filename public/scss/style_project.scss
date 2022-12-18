@@ -1,20 +1,14 @@
 @forward 'globals'; //name of folder
 @forward 'util';
-.button {
-    display: inline-block;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 37px;
-    background-color: var(--buttons);
-    font-weight: 800;
-    font-size: 1.25rem;
-    padding: 14px 20px 14px 20px;
-    transition: 0.5s;
-    &:hover {
-        position: relative;
-        top: -10px; //This needs to be added so that it stays at the top at the end of animation
-        animation: fadeIn 0.5s;
-        background-color: var(--buttons-hover);
-        color: var(--white);
+:root {
+    h3 {
+        font-size: 1.68rem;
+        font-weight: 800;
+    }
+    h2 {
+        color: var(--yellow);
+        text-align: left;
+        margin: 0px;
     }
 }
 
@@ -24,8 +18,8 @@
     gap: 14px;
 }
 
-h2 {
-    text-align: center;
+li {
+    list-style-position: inside;
 }
 
 body {
@@ -113,103 +107,61 @@ svg {
     }
 }
 
+table {
+    width: 22rem;
+}
+
+aside {
+    min-width: 13.5rem;
+    div {
+        z-index: -1;
+        position: sticky;
+        top: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 11rem; //hugs the content
+        margin: auto;
+        padding: 25px 20px;
+        gap: 17px;
+        background-color: var(--white);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 25px;
+        a:hover {
+            font-weight: 700;
+            transition: 0.2s;
+        }
+        .active {
+            font-weight: 700;
+        }
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 main {
     display: flex;
     flex-direction: column;
-    margin: auto; //So that it's centered in body
-    padding: 40px 0px 120px 0px;
-    gap: 133px;
-    max-width: 18.875rem; //309px //beschränkt den Inhalt
-    .project-container {
-        display: flex;
-        flex-direction: column;
-        gap: 108px;
-        .project>* {
-            margin-top: 25px;
-        }
+    padding: 40px 10px 120px 10px;
+    gap: 120px;
+    max-width: 70rem; //950px //beschränkt den Inhalt
+    ul {
+        padding-left: 0;
+        line-height: 24px;
     }
 }
 
-.project-img {
-    width: 100%;
-    border-radius: 19px;
-}
-
-.skills {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    .icon-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-        width: 81px;
-        & .skill-icon {
-            width: 53px;
-        }
-    }
-    span {
-        font-weight: 600;
-        text-align: center;
-    }
-}
-
-.skills+.skills {
-    padding-top: 40px;
-}
-
-.hero-container {
+//For spacing the content
+section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    .hero {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        & .profile-img {
-            width: 272px;
-            height: 272px;
-        }
-        .hero-text {
-            display: flex;
-            flex-direction: column;
-            gap: 23px;
-            .highlight {
-                //color: var(--brown);
-                font-weight: 900;
-                //text-shadow: 0px 0px 2px var(--brown);
-            }
-        }
-    }
-    & .arrow-img {
-        z-index: -10;
-        width: 50px;
-        animation: wobble 1.7s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease;
-    }
-}
-
-.cite-container {
-    text-align: center;
-    .fancy-dots {
-        display: inline-block;
-        font-style: normal;
-        font-size: 5rem;
-        color: var(--light-brown);
-        padding-bottom: 56px;
-        line-height: 0.8;
-    }
-    p {
-        font-style: italic;
-        padding-bottom: 56px;
-        font-weight: 500;
-        span {
-            font-weight: 300;
-        }
+    gap: 20px;
+    h3 {
+        padding-top: 42px;
     }
 }
 
@@ -223,13 +175,10 @@ footer {
     gap: 32px;
 }
 
-//714px
+//714px //SIDEMENU SHOWS
 @media (min-width: 44.6em) {
     body {
         background-image: url(/public/assets/backgroundmedium.png);
-    }
-    main {
-        max-width: 37rem; //588px
     }
     header {
         justify-content: space-between;
@@ -263,20 +212,6 @@ footer {
             }
         }
     }
-    .hero-container {
-        .profile-img {
-            width: 309px;
-            height: 309px;
-        }
-    }
-    .skills+.skills {
-        padding-top: 0px;
-    }
-    .skills-no-wrap {
-        display: flex;
-        gap: 25px;
-        justify-content: center;
-    }
     footer {
         flex-direction: row;
         justify-content: center;
@@ -288,10 +223,6 @@ footer {
 @media (min-width: 62.3em) {
     body {
         background-image: url(/public/assets/backgroundlarge.png);
-    }
-    main {
-        max-width: 54.75rem; //876px
-        padding: 80px 0px 120px 0px;
     }
     header {
         .logo {
