@@ -18,9 +18,9 @@
     <header class="header">
         <img class="logo" src="/public/assets/logo.png">
         <nav class="primary-navigation" data-visible="false">
-            <a class="active" href="/" alt="Home">Home</a>
-            <a>My Work</a>
-            <a href="about.html" alt="About me">About Me</a>
+            <a class="home" alt="Home">Home</a>
+            <a class="work" alt="My Work">My Work</a>
+            <a class="about" alt="About Me">About Me</a>
         </nav>
         <div class="socials">
             <a href="https://www.linkedin.com/in/sophia-precker-678114241/" target=”_blank” alt="LinkedIn"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -50,33 +50,42 @@
     </header>
 
     <main>
-        <div class="hero-container">
-            <div class="hero">
-                <img class="profile-img" src="/public/assets/hero-img.png">
-                <div class="hero-text">
-                    <h1>Hi, I’m Sophia Precker,</h1>
-                    <h1>I am a self-taught <br>
-                        <span class="highlight">UX/UI-Designer / <br>
+        <section id="home">
+            <br>
+            <br>
+            <!-- <br> br needed to add content to hero so that home nav stays in focus -->
+            <div class="hero-container">
+                <div class="hero">
+                    <img class="profile-img" src="/public/assets/hero-img.png">
+                    <div class="hero-text">
+                        <h1>Hi, I’m Sophia Precker,</h1>
+                        <h1>I am a self-taught <br>
+                            <span class="highlight">UX/UI-Designer / <br>
                 Frontend Developer</span> <br>based in Aachen, Germany</h1>
+                    </div>
                 </div>
+                <a class="button">Check out my work</a>
+                <img class="arrow-img" src="/public/assets/arrow.png">
             </div>
-            <a class="button">Check out my work</a>
-            <img class="arrow-img" src="/public/assets/arrow.png">
-        </div>
+        </section>
+
+        <!-- FOR TRANSITION -->
+        <div id=mywork style="width: 100px; height: 1px;"></div>
 
         <!-- MY WORK SECTION -->
-        <div class="mywork-container">
+        <section id="work">
+            <div class="mywork-container">
 
-            <h2>My Work</h2>
+                <h2>My Work</h2>
 
-            <div class="project-container">
-                <div class="project">
-                    <img class="project-img" src="/public/assets/habitual.png">
-                    <h3>Habitual - App</h3>
-                    <p>This case study is the result of a challenge given by the instructors of the Udemy course for UX/UI.</p>
-                    <a class="button">Case study</a>
-                </div>
-                <!-- <div class="project">
+                <div class="project-container">
+                    <div class="project">
+                        <img class="project-img" src="/public/assets/habitual.png">
+                        <h3>Habitual - App</h3>
+                        <p>This case study is the result of a challenge given by the instructors of the Udemy course for UX/UI.</p>
+                        <a class="button" id="habitual">Case study</a>
+                    </div>
+                    <!-- <div class="project">
                     <h3>Hevy - App [Redesign]</h3>
                     <p>Lorem ipsum dolor sit amet consectetur. Egestas sit est in mollis.</p>
                     <a class="button">Case study</a>
@@ -87,9 +96,9 @@
                     <a class="button">Case study</a>
                     <a class="button">Visit Website</a>
                 </div> -->
+                </div>
             </div>
-        </div>
-
+        </section>
         <!-- SKILL SECTION -->
         <div class="skill-container">
             <div class="banner"></div>
@@ -109,50 +118,52 @@
                 </div>
             </div>
 
-            <h4>Languages I speak</h4>
-            <div class="skills-no-wrap">
+
+            <section>
+                <h4>Languages I speak</h4>
+                <div class="skills-no-wrap">
+                    <div class="skills">
+                        <div class="icon-text">
+                            <img class="skill-icon" src="/public/assets/html.png">
+                            <span>HTML</span>
+                        </div>
+                        <div class="icon-text">
+                            <img class="skill-icon" src="/public/assets/css.png">
+                            <span>S/CSS</span>
+                        </div>
+                        <div class="icon-text">
+                            <img class="skill-icon" src="/public/assets/sass.png">
+                            <span>Sass</span>
+                        </div>
+                    </div>
+
+
+                    <div class="skills">
+                        <div class="icon-text">
+                            <img class="skill-icon" src="/public/assets/js.png">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="icon-text">
+                            <img class="skill-icon" src="/public/assets/git.png">
+                            <span>Git</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h4>Dev tools I use</h4>
                 <div class="skills">
                     <div class="icon-text">
-                        <img class="skill-icon" src="/public/assets/html.png">
-                        <span>HTML</span>
+                        <img class="skill-icon" src="/public/assets/vsc.png">
+                        <span>VSC</span>
                     </div>
                     <div class="icon-text">
-                        <img class="skill-icon" src="/public/assets/css.png">
-                        <span>S/CSS</span>
-                    </div>
-                    <div class="icon-text">
-                        <img class="skill-icon" src="/public/assets/sass.png">
-                        <span>Sass</span>
+                        <img class="skill-icon" src="/public/assets/github.png">
+                        <span>GitHub</span>
                     </div>
                 </div>
-
-
-                <div class="skills">
-                    <div class="icon-text">
-                        <img class="skill-icon" src="/public/assets/js.png">
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="icon-text">
-                        <img class="skill-icon" src="/public/assets/git.png">
-                        <span>Git</span>
-                    </div>
-                </div>
-            </div>
-
-
-            <h4>Dev tools I use</h4>
-            <div class="skills">
-                <div class="icon-text">
-                    <img class="skill-icon" src="/public/assets/vsc.png">
-                    <span>VSC</span>
-                </div>
-                <div class="icon-text">
-                    <img class="skill-icon" src="/public/assets/github.png">
-                    <span>GitHub</span>
-                </div>
-            </div>
         </div>
-
+        </section>
 
         <!-- CITE SECTION -->
 
