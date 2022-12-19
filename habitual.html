@@ -10,10 +10,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="/dist/script.js" defer></script>
+    <script src="/dist/script_project.js" defer></script>
 </head>
 
-<body>
+<body id="habitual">
+
+    <div class="container-popup">
+
+        <img class="popup" src="/public/assets/habitual/persona1.png">
+
+        <span>&times;</span>
+    </div>
+
     <header class="header">
         <img class="logo" src="/public/assets/logo.png">
         <nav class="primary-navigation" data-visible="false" alt="navigation">
@@ -48,9 +56,24 @@
         </button>
     </header>
 
+    <aside class="onlymobile">
+        <div>
+            <a href=#ProjectOverviewScroll class="ProjectOverview">Project Overview</a>
+            <a href=#UserResearchScroll class="UserResearch">User Research</a>
+            <a href=#IdeationScroll class="Ideation">Ideation</a>
+            <a href=#DesignScroll class="Design">Design</a>
+            <a href=#LearningsScroll class="Learnings">Learnings</a>
+        </div>
+    </aside>
+
+    <picture>
+        <img class="hidden" src="/public/assets/habitual/mockup2.png">
+        <img class="hidden" src="/public/assets/habitual/habitual.png">
+        <img src="/public/assets/habitual/mockup3.png">
+    </picture>
     <!-- img mock-ups -->
     <div class="container">
-        <aside>
+        <aside class="onlydesktop">
             <div>
                 <a href=#ProjectOverviewScroll class="ProjectOverview">Project Overview</a>
                 <a href=#UserResearchScroll class="UserResearch">User Research</a>
@@ -60,7 +83,7 @@
             </div>
         </aside>
 
-        <main>
+        <main id="work">
             <section>
                 <h2>habitual - App</h2>
 
@@ -96,25 +119,27 @@
                 <h3>Research on Amazons success</h3>
                 <p>What are good and bad features of Amazon’s UX/UI? Why is Amazon successful? Which UX/UI has been proven to work and be kept? What should be improved on?</p>
 
-                <p><strong>Pros</strong></p>
-                <ul>
-                    <li>In-depth search/filter function</li>
-                    <li>Rating and review system</li>
-                    <li>Wide range of products and prices</li>
-                    <li>Personalized home page based on search function</li>
-                    <li>Text and image-based cues</li>
-                    <li>Short delivery / free shipping</li>
-                </ul>
+                <div class="pro-con">
+                    <ul>
+                        <p><strong>Pros</strong></p>
+                        <li>In-depth search/filter function</li>
+                        <li>Rating and review system</li>
+                        <li>Wide range of products and prices</li>
+                        <li>Personalized home page based on search function</li>
+                        <li>Text and image-based cues</li>
+                        <li>Short delivery / free shipping</li>
+                    </ul>
 
-                <p><strong>Cons</strong></p>
-                <ul>
-                    <li>Old-fashioned UI</li>
-                    <li>Too many ads</li>
-                    <li>Feature overload on webpage</li>
-                    <li>Content overload on homepage</li>
-                    <li>Long scroll-time to reach reviews</li>
-                </ul>
 
+                    <ul>
+                        <p><strong>Cons</strong></p>
+                        <li>Old-fashioned UI</li>
+                        <li>Too many ads</li>
+                        <li>Feature overload on webpage</li>
+                        <li>Content overload on homepage</li>
+                        <li>Long scroll-time to reach reviews</li>
+                    </ul>
+                </div>
                 <p><strong>Issues</strong></p>
 
                 <p>Amazon is overloaded and very distracting. There is too much going on on almost every page and can feel quite chaotic when opening Amazon for the first time. The user is overwhelmed and often learns to blank out all the unnecessary information.
@@ -129,13 +154,19 @@
                 <p>Based on my user research I created two user personas which represent the younger target group and their needs and goals. This helped me to make to user more tangible and give it a more personal feeling when discussing the users needs
                     and painpoints. I will use their names in this case study.</p>
 
+                <div class="userPersona">
+                    <a><img src="/public/assets/habitual/persona1.png"></a>
+                    <a><img src="/public/assets/habitual/persona2.png"></a>
+                </div>
                 <!-- Image of Clarissa and Max -->
 
                 <h3>User Journey</h3>
                 <p>I also created a user journey map to see how the user moves through the app to find a certain product. This map captures the users actions, thoughts and feelings. This helps breaking down the users way towards the goal and where painpoints
-                    lie. This map shows the users search for a product on Amazon, starting from the homepage to placing the order.</p> <br> <br>
+                    lie. This map shows the users search for a product on Amazon, starting from the homepage to placing the order.</p>
                 <p>Special painpoints were an unappealing UI, pricy products and too many distractions which the user encounters regularly. These are the main painpoints which I want to improve and implement in the Habitual app.</p>
 
+                <a><img src="/public/assets/habitual/table1.png"></a>
+                <a><img src="/public/assets/habitual/table2.png"></a>
                 <!-- Image of tables -->
             </section>
 
@@ -156,6 +187,8 @@
                 <h3>Brainstorming ideas</h3>
                 <p>I used my research and my own ideas to find solutions for these HMW questions. I collected everything that came to my mind in a diagram and later decided on the most appealing ones to further ideate.</p>
 
+                <a><img src="/public/assets/habitual/brainstorming.png" alt="brainstorming sticky notes"></a>
+
                 <!-- Image of sticky notes -->
             </section>
 
@@ -168,41 +201,95 @@
                 <p>I started with drawing simple user flows to visualize the users steps to accomplish a goal namely finding the right product and placing an order. I drew everything that came to my mind and looking for other solutions that might help eliminating
                     pain points.</p>
 
+                <a><img src="/public/assets/habitual/wireframes.png" style="max-width: 486px"></a>
                 <!-- Image of wireframe -->
+
                 <p>I turned these sketched-out user flows into more structured maps in Miro.</p>
+
+                <a><img src="/public/assets/habitual/userflow2.png"></a>
+                <a><img src="/public/assets/habitual/userflow3.png"></a>
                 <!-- Image of miro user flows -->
+
                 <p>I created a sitemap to help guide my user flows.</p>
+
+                <a><img src="/public/assets/habitual/sitemap.png" style="max-width: 450px"></a>
                 <!-- Image of miro table -->
 
 
                 <h3>Wireframes</h3>
                 <p>From there I started to design low-fidelity wireframes in Figma.</p>
-                <!-- All Figma wireframes -->
-
+                <div>
+                    <!-- All Figma wireframes -->
+                    <a><img src="/public/assets/habitual/wireframe1.png" style="max-width: 550px"></a>
+                    <a><img src="/public/assets/habitual/wireframe2.png" style="max-width: 550px"></a>
+                    <a><img src="/public/assets/habitual/wireframe3.png" style="max-width: 550px"></a>
+                    <a><img src="/public/assets/habitual/wireframe4.png" style="max-width: 550px"></a>
+                    <a><img src="/public/assets/habitual/wireframe5.png" style="max-width: 550px"></a>
+                    <a><img src="/public/assets/habitual/wireframe6.png" style="max-width: 550px"></a>
+                </div>
                 <h3>Style Guide</h3>
                 <p>Another painpoint is the blant UI of Amazon’s webpage. Because Max and Lindsay are young people I decided to give the app a clean and light design with modern typography and a small color variation to prevent the page from feeling overloaded
                     and more appealing with rounded shapes. I turned every element into components in Figma to build a flexible prototype.</p>
-                <!-- All Figma style guide -->
 
-                <h3>Prototyping</h3>
-                <p>I went through three iterations.</p>
-                <!-- Figma first iteration -->
-                <p><strong>First Iteration</strong></p>
-                <p>-> Take away:</p>
-                <ul>
-                    <li>Distracting Background</li>
-                    <li>Too many vibrant/accent colors</li>
-                    <li>No clear contrast of panels f.e. reviews (too transparent)</li>
-                </ul>
-                <p>-> Corrections:</p>
-                <ul>
-                    <li>Lowering Background intensity by lowering image oppacity</li>
-                    <li>Going back to black text color so it looks more subtle and fits to reading flow</li>
-                    <li>Panels get white background to appear more distinct and structured</li>
-                </ul>
+                <!-- All Figma style guide -->
+                <p><strong>Typography</strong></p>
+                <a><img src="/public/assets/habitual/typography.png"></a>
+                <p><strong>Color palette</strong></p>
+                <a><img src="/public/assets/habitual/colorpalette.png" style="max-width: 361px"></a>
+                <p><strong>Buttons</strong></p>
+                <a><img src="/public/assets/habitual/buttons.png" style="max-width: 271px"></a>
+                <p><strong>Cards/Products</strong></p>
+                <a><img src="/public/assets/habitual/cards.png" style="max-width: 450px"></a>
+
+                <div class="firstIteration-container">
+
+
+                    <div class="text">
+                        <h3>Prototyping</h3>
+                        <br>
+                        <p>I went through three iterations.</p>
+                        <br>
+                        <p><strong>First Iteration</strong></p>
+                        <br>
+                        <p>-> Take away:</p>
+                        <ul>
+                            <li>Distracting Background</li>
+                            <li>Too many vibrant/accent colors</li>
+                            <li>No clear contrast of panels f.e. reviews (too transparent)</li>
+                        </ul>
+                        <p>-> Corrections:</p>
+                        <ul>
+                            <li>Lowering Background intensity by lowering image oppacity</li>
+                            <li>Going back to black text color so it looks more subtle and fits to reading flow</li>
+                            <li>Panels get white background to appear more distinct and structured</li>
+                        </ul>
+                    </div>
+                    <!-- Figma first iteration -->
+                    <div class="firstIteration">
+                        <div class="two">
+                            <a><img src="/public/assets/habitual/firstiteration1.png"></a>
+
+                            <a><img src="/public/assets/habitual/firstiteration2.png"></a>
+
+                        </div>
+                        <div class="three">
+                            <a><img src="/public/assets/habitual/firstiteration3.png"></a>
+
+                            <a><img src="/public/assets/habitual/firstiteration4.png"></a>
+
+                            <a><img src="/public/assets/habitual/firstiteration5.png"></a>
+
+                        </div>
+                    </div>
+                </div>
 
                 <p><strong>Second Iteration</strong></p>
                 <!-- Figma second iteration -->
+                <div class="secondIteration">
+                    <a><img src="/public/assets/habitual/seconditeration1.png"></a>
+                    <a><img src="/public/assets/habitual/seconditeration2.png"></a>
+                    <a><img src="/public/assets/habitual/seconditeration3.png"></a>
+                </div>
                 <p>-> Take away:</p>
                 <ul>
                     <li>Background still distracting</li>
@@ -245,6 +332,9 @@
             </section>
         </main>
     </div>
+
+
+
     <!-- FOOTER -->
     <footer>
         <p>Designed by Sophia Precker</p>
@@ -273,6 +363,8 @@
         </svg></a>
         </div>
     </footer>
+
+
 </body>
 
 </html>

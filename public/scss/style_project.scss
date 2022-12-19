@@ -12,10 +12,49 @@
     }
 }
 
+.container-popup {
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    position: fixed;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.8);
+    img {
+        object-fit: scale-down;
+        max-width: 100%;
+    }
+    span {
+        position: absolute;
+        top: 0;
+        right: 30px;
+        font-size: 4rem;
+        font-weight: 500;
+        color: white;
+        cursor: pointer;
+    }
+}
+
 //Icons for LinkedIn, Mail, GitHub
 .socials {
     display: flex;
     gap: 14px;
+}
+
+picture {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 88px;
+    gap: 1%;
+    &>* {
+        display: inline;
+        width: 100%;
+        border-radius: 10%; //working with % instead of px to keep it consistent with responsive design
+    }
+    .hidden {
+        display: none;
+    }
 }
 
 li {
@@ -30,13 +69,14 @@ body {
 }
 
 header {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--white);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    position: sticky;
-    top: 0;
     padding: 22px;
     //MENU SYMBOL
     .mobile-nav-toggle {
@@ -100,34 +140,36 @@ header {
     }
 }
 
-svg {
-    fill: var(--black);
-    transition: 0.4s;
-    &:hover {
-        fill: var(--light-brown);
-    }
+.onlydesktop {
+    display: none;
 }
 
-table {
-    width: 22rem;
-}
-
-aside {
-    position: relative;
-    min-width: 13.5rem;
+.onlymobile {
+    z-index: 5;
+    width: 100%;
+    position: sticky;
+    top: 88px; //perfect!
     div {
-        position: sticky;
-        top: 130px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
-        max-width: 11rem; //hugs the content
         margin: auto;
         padding: 25px 20px;
-        gap: 17px;
+        gap: 2.5rem;
         background-color: var(--white);
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        border-radius: 25px;
+        -ms-overflow-style: none;
+        /* for Internet Explorer, Edge */
+        scrollbar-width: none;
+        /* for Firefox */
+        overflow-x: scroll;
+        a {
+            white-space: nowrap; //prevents text from wrapping when in mobile
+        }
+        &::-webkit-scrollbar {
+            //Hier hatte lediglich das & gefehlt
+            display: none;
+        }
         a:hover {
             font-weight: 700;
             transition: 0.2s;
@@ -138,6 +180,22 @@ aside {
     }
 }
 
+svg {
+    fill: var(--black);
+    transition: 0.4s;
+    &:hover {
+        fill: var(--light-brown);
+    }
+}
+
+table {
+    max-width: 22rem;
+    td:first-child {
+        white-space: nowrap;
+        padding-right: 0.625rem;
+    }
+}
+
 .container {
     display: flex;
     flex-direction: row;
@@ -145,22 +203,41 @@ aside {
 }
 
 main {
+    position: relative;
+    z-index: 3;
     display: flex;
     flex-direction: column;
-    padding: 40px 10px 120px 10px;
+    padding: 40px 20px 120px 20px;
     gap: 80px;
     max-width: 70rem; //950px //beschränkt den Inhalt
     ul {
         padding-left: 0;
         line-height: 24px;
     }
+    img {
+        -ms-overflow-style: none;
+        /* for Internet Explorer, Edge */
+        scrollbar-width: none;
+        /* for Firefox */
+        overflow-x: scroll;
+        width: 100%;
+    }
+}
+
+.firstIteration,
+.secondIteration {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 17rem;
+    margin: auto;
 }
 
 //For spacing the content
 section {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
     h3 {
         padding-top: 42px;
     }
@@ -180,6 +257,11 @@ footer {
 @media (min-width: 44.6em) {
     body {
         background-image: url(/public/assets/backgroundmedium.png);
+    }
+    .container-popup {
+        img {
+            padding: 60px 0px;
+        }
     }
     header {
         justify-content: space-between;
@@ -211,6 +293,62 @@ footer {
                 border: 2px solid var(--black);
                 border-radius: 84px;
             }
+        }
+    }
+    .onlymobile {
+        display: none;
+    }
+    .onlydesktop {
+        display: block;
+        position: relative;
+        min-width: 13.5rem;
+        padding-top: 50px;
+        div {
+            position: sticky;
+            top: 130px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 11rem; //hugs the content
+            margin: auto;
+            padding: 25px 20px;
+            gap: 17px;
+            background-color: var(--white);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 25px;
+            a:hover {
+                font-weight: 700;
+                transition: 0.2s;
+            }
+            .active {
+                font-weight: 700;
+            }
+        }
+    }
+    picture {
+        padding-top: 100px;
+        &>* {
+            display: inline;
+            width: 45%;
+            border-radius: 10%; //working with % instead of px to keep it consistent with responsive design
+        }
+        .hidden:nth-child(1) {
+            display: inline;
+        }
+    }
+    .firstIteration,
+    .secondIteration {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        max-width: 45rem;
+        margin: auto;
+        padding: 20px 0px;
+        align-items: center;
+        justify-content: center;
+        .two,
+        .three {
+            width: 12rem;
         }
     }
     footer {
@@ -247,8 +385,26 @@ footer {
             }
         }
     }
-    .project-container {
-        max-width: 37rem;
-        margin: auto;
+    .userPersona {
+        display: flex;
+    }
+    picture>* {
+        display: inline;
+        width: 31%;
+        border-radius: 10%; //working with % instead of px to keep it consistent with responsive design
+    }
+    .hidden:nth-child(2) {
+        display: inline;
+    }
+    .firstIteration-container {
+        display: flex;
+        gap: 20px;
+        .text {
+            max-width: 400px;
+        }
+    }
+    .pro-con {
+        display: flex;
+        gap: 6.25rem;
     }
 }

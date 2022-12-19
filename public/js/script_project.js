@@ -13,50 +13,13 @@ menuHome.addEventListener("click", () => {
     window.location.replace("https://cozy-habit.github.io/");
 })
 
-if (menuWork) {
-    menuWork.addEventListener("click", () => {
-        window.location.replace("https://cozy-habit.github.io/#mywork");
-    })
-}
+menuWork.addEventListener("click", () => {
+    window.location.replace("https://cozy-habit.github.io/#mywork");
+})
 menuAbout.addEventListener("click", () => {
     window.location.replace("https://cozy-habit.github.io/about.html");
 })
-if (buttonWork) { //Necessary if button doesn't exist in a current html document that uses this script
-    buttonWork.addEventListener("click", () => {
-        window.location.replace("https://cozy-habit.github.io/#mywork");
-    })
-}
-if (buttonHabitual) {
-    buttonHabitual.addEventListener("click", () => {
-        window.location.replace("https://cozy-habit.github.io/habitual.html");
-    })
-}
 
-
-
-
-//FOR MENU ACTIVE SELECTION
-const sections = document.querySelectorAll('section');
-const navLi = document.querySelectorAll('nav a');
-
-window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (window.scrollY >= sectionTop - sectionHeight / 3) {
-
-            current = section.getAttribute('id');
-
-        }
-    })
-    navLi.forEach(a => {
-        a.classList.remove('active');
-        if (a.classList.contains(current)) {
-            a.classList.add('active');
-        }
-    })
-})
 
 //FOR MENU VISIBILITY BUTTON
 const nav = document.querySelector(".primary-navigation");
@@ -88,8 +51,8 @@ window.addEventListener('scroll', () => {
     let current = '';
     sections_productpage.forEach(section => {
         const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (window.scrollY >= sectionTop - 135) {
+
+        if (window.scrollY >= sectionTop + 310) {
             //Wenn der unterste Rand größer gleich dem Beginn der Section ist
             //Hier muss jedoch der Header berücksichtig werden der über dem Section Beginn liegt und daher die Überschrift abschneidet
             current = section.getAttribute('id');
@@ -105,10 +68,23 @@ window.addEventListener('scroll', () => {
 })
 
 
-if (document.getElementById(habitual)) {
-    document.querySelector("nav .work").classList.add("active");
-    console.log("working");
+
+document.querySelector("nav .work").classList.add("active");
+
+
+//IMAGE POP-UP
+document.querySelectorAll('main img').forEach(image => {
+    image.onclick = () => {
+        console.log('click');
+        document.querySelector('.container-popup').style.display = 'flex';
+        document.querySelector('.container-popup img').src = image.getAttribute('src');
+    }
+});
+
+document.querySelector('.container-popup span').onclick = () => {
+    document.querySelector('.container-popup').style.display = 'none';
 }
+
 //It initially didn't work because the script laoded before the html content
 //which is why navToggle is null
 //Solution: put 'defer' where script is defined in header
