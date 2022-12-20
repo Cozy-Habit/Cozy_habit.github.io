@@ -10,6 +10,20 @@
         text-align: left;
         margin: 0px;
     }
+    p {
+        padding: 20px 0px;
+    }
+}
+
+.hidden-animate {
+    opacity: 0;
+    transition: all 1s;
+    transform: translateY(30%);
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .container-popup {

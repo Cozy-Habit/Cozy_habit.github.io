@@ -1,4 +1,3 @@
--add lazy loading
--add fade-in animation to content 
 -fix button bug
 -fix project page nav bar highlight after click on mobile view (Ecosia can't display it)
+-add navbar disappearing after being clicked

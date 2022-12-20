@@ -17,7 +17,7 @@
 
     <div class="container-popup">
 
-        <img class="popup" src="/public/assets/habitual/persona1.png">
+        <img class="popup" src="/public/assets/habitual/persona1.png" loading="lazy">
 
         <span>&times;</span>
     </div>
@@ -67,13 +67,13 @@
     </aside>
 
     <picture>
-        <img class="hidden" src="/public/assets/habitual/mockup2.png">
-        <img class="hidden" src="/public/assets/habitual/habitual.png">
-        <img src="/public/assets/habitual/mockup3.png">
+        <img class="hidden" src="/public/assets/habitual/mockup2.png" loading="lazy">
+        <img class="hidden" src="/public/assets/habitual/habitual.png" loading="lazy">
+        <img src="/public/assets/habitual/mockup3.png" loading="lazy">
     </picture>
     <!-- img mock-ups -->
     <div class="container">
-        <aside class="onlydesktop">
+        <aside class="onlydesktop ">
             <div>
                 <a href=#ProjectOverviewScroll class="ProjectOverview">Project Overview</a>
                 <a href=#UserResearchScroll class="UserResearch">User Research</a>
@@ -84,7 +84,7 @@
         </aside>
 
         <main id="work">
-            <section>
+            <section class="hidden-animate">
                 <h2>habitual - App</h2>
 
                 <table>
@@ -105,7 +105,7 @@
 
             <div id="ProjectOverviewScroll" style="width: 100px; height: 50px;"></div>
 
-            <section id="ProjectOverview">
+            <section id="ProjectOverview" class="hidden-animate">
                 <h2>Project Overview</h2>
                 <p>This case study is the result of a challenge given by the instructors of the Udemy course <strong>Complete Web & Mobile Designer in 2023: UI/UX, Figma, +more</strong> which I have participated in august 2022.<br><br> The fictional client
                     wanted a mobile app that is able to compete with the e-commerce plattform Amazon. The name and logo was already given by the client.</p>
@@ -114,136 +114,154 @@
             <div id="UserResearchScroll" style="width: 100px; height: 50px;"></div>
 
             <section id="UserResearch">
-                <h2>User research / Collecting data</h2>
+                <div class="hidden-animate">
+                    <h2>User research / Collecting data</h2>
 
-                <h3>Research on Amazons success</h3>
-                <p>What are good and bad features of Amazon’s UX/UI? Why is Amazon successful? Which UX/UI has been proven to work and be kept? What should be improved on?</p>
+                    <h3>Research on Amazons success</h3>
+                    <p>What are good and bad features of Amazon’s UX/UI? <br>Why is Amazon successful? <br>Which UX/UI has been proven to work and be kept? What should be improved on?</p>
 
-                <div class="pro-con">
-                    <ul>
-                        <p><strong>Pros</strong></p>
-                        <li>In-depth search/filter function</li>
-                        <li>Rating and review system</li>
-                        <li>Wide range of products and prices</li>
-                        <li>Personalized home page based on search function</li>
-                        <li>Text and image-based cues</li>
-                        <li>Short delivery / free shipping</li>
-                    </ul>
+                    <p>These were the questions I focused on in my research.</p>
+
+                    <div class="pro-con">
+                        <ul>
+                            <p><strong>Pros</strong></p>
+                            <li>In-depth search/filter function</li>
+                            <li>Rating and review system</li>
+                            <li>Wide range of products and prices</li>
+                            <li>Personalized home page based on search function</li>
+                            <li>Text and image-based cues</li>
+                            <li>Short delivery / free shipping</li>
+                        </ul>
 
 
-                    <ul>
-                        <p><strong>Cons</strong></p>
-                        <li>Old-fashioned UI</li>
-                        <li>Too many ads</li>
-                        <li>Feature overload on webpage</li>
-                        <li>Content overload on homepage</li>
-                        <li>Long scroll-time to reach reviews</li>
-                    </ul>
+                        <ul>
+                            <p><strong>Cons</strong></p>
+                            <li>Old-fashioned UI</li>
+                            <li>Too many ads</li>
+                            <li>Feature overload on webpage</li>
+                            <li>Content overload on homepage</li>
+                            <li>Long scroll-time to reach reviews</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p><strong>Issues</strong></p>
+
+                        <p>Amazon is overloaded and very distracting. There is too much going on on almost every page and can feel quite chaotic when opening Amazon for the first time. The user is overwhelmed and often learns to blank out all the unnecessary
+                            information.
+                        </p>
+                    </div>
+                    <div>
+                        <p><strong>Goal</strong></p>
+
+                        <p>
+                            Creating an app that keeps the features that already have proven to be successful/functional. Creating a modern UI system and keeping the content neat and simple to provide a more intuitive user experience.</p>
+                    </div>
                 </div>
-                <p><strong>Issues</strong></p>
-
-                <p>Amazon is overloaded and very distracting. There is too much going on on almost every page and can feel quite chaotic when opening Amazon for the first time. The user is overwhelmed and often learns to blank out all the unnecessary information.
-                </p>
-
-                <p><strong>Goal</strong></p>
-
-                <p>
-                    Creating an app that keeps the features that already have proven to be successful/functional. Creating a modern UI system and keeping the content neat and simple to provide a more intuitive user experience.</p>
-
-                <h3>User Persona</h3>
-                <p>Based on my user research I created two user personas which represent the younger target group and their needs and goals. This helped me to make to user more tangible and give it a more personal feeling when discussing the users needs
-                    and painpoints. I will use their names in this case study.</p>
-
-                <div class="userPersona">
-                    <a><img src="/public/assets/habitual/persona1.png"></a>
-                    <a><img src="/public/assets/habitual/persona2.png"></a>
+                <div class="hidden-animate">
+                    <h3>User Persona</h3>
+                    <p>Based on my user research I created two user personas which represent the younger target group and their needs and goals. This helped me to make to user more tangible and give it a more personal feeling when discussing the users needs
+                        and painpoints. I will use their names in this case study.</p>
+                    <div class="userPersona">
+                        <a><img src="/public/assets/habitual/persona1.png" loading="lazy"></a>
+                        <a><img src="/public/assets/habitual/persona2.png" loading="lazy"></a>
+                    </div>
                 </div>
                 <!-- Image of Clarissa and Max -->
+                <div class="hidden-animate">
+                    <h3>User Journey</h3>
+                    <p>I also created a user journey map to see how the user moves through the app to find a certain product. This map captures the users actions, thoughts and feelings. This helps breaking down the users way towards the goal and where painpoints
+                        lie. This map shows the users search for a product on Amazon, starting from the homepage to placing the order.</p>
+                    <p>Special painpoints were an unappealing UI, pricy products and too many distractions which the user encounters regularly. These are the main painpoints which I want to improve and implement in the Habitual app.</p>
 
-                <h3>User Journey</h3>
-                <p>I also created a user journey map to see how the user moves through the app to find a certain product. This map captures the users actions, thoughts and feelings. This helps breaking down the users way towards the goal and where painpoints
-                    lie. This map shows the users search for a product on Amazon, starting from the homepage to placing the order.</p>
-                <p>Special painpoints were an unappealing UI, pricy products and too many distractions which the user encounters regularly. These are the main painpoints which I want to improve and implement in the Habitual app.</p>
-
-                <a><img src="/public/assets/habitual/table1.png"></a>
-                <a><img src="/public/assets/habitual/table2.png"></a>
+                    <div>
+                        <a><img src="/public/assets/habitual/table1.png" loading="lazy"></a>
+                        <a><img src="/public/assets/habitual/table2.png" loading="lazy"></a>
+                    </div>
+                </div>
                 <!-- Image of tables -->
             </section>
 
             <div id="IdeationScroll" style="width: 100px; height: 50px;"></div>
 
             <section id="Ideation">
-                <h2>Ideation</h2>
-                <h3>How might we - questions</h3>
-                <p>I tried to create turn these painpoints into compact ‘How Might We’ questions that find the sweet spot between too general and too detailed and leave enough room for creative solution findings. I decided to focus on the following:</p>
-                <ul>
-                    <li>HMW - personalize a users home page?</li>
-                    <li>HMW - personalize a users wishlist?</li>
-                    <li>HMW - personalize a users checkout?</li>
-                    <li>HMW - reduce distracting content on the app?</li>
-                    <li>HMW - make searching for products more efficient?</li>
-                    <li>HMW - provide cheap products?</li>
-                </ul>
-                <h3>Brainstorming ideas</h3>
-                <p>I used my research and my own ideas to find solutions for these HMW questions. I collected everything that came to my mind in a diagram and later decided on the most appealing ones to further ideate.</p>
+                <div class="hidden-animate">
+                    <h2>Ideation</h2>
+                    <h3>How might we - questions</h3>
+                    <p>I tried to turn these painpoints into compact ‘How Might We’ questions that find the sweet spot between too general and too detailed and leave enough room for creative solution findings. I decided to focus on the following:</p>
+                    <ul>
+                        <li>HMW - personalize a users home page?</li>
+                        <li>HMW - personalize a users wishlist?</li>
+                        <li>HMW - personalize a users checkout?</li>
+                        <li>HMW - reduce distracting content on the app?</li>
+                        <li>HMW - make searching for products more efficient?</li>
+                        <li>HMW - provide cheap products?</li>
+                    </ul>
+                </div>
+                <div class="hidden-animate">
+                    <h3>Brainstorming ideas</h3>
+                    <p>I used my research and my own ideas to find solutions for these HMW questions. I collected everything that came to my mind in a diagram and later decided on the most appealing ones to further ideate.</p>
 
-                <a><img src="/public/assets/habitual/brainstorming.png" alt="brainstorming sticky notes"></a>
-
+                    <a><img src="/public/assets/habitual/brainstorming.png" alt="brainstorming sticky notes" style="max-width: 700px" loading="lazy"></a>
+                </div>
                 <!-- Image of sticky notes -->
             </section>
 
             <div id="DesignScroll" style="width: 100px; height: 50px;"></div>
 
             <section id="Design">
-                <h2>Design</h2>
+                <div class="hidden-animate">
+                    <h2>Design</h2>
 
-                <h3>User Flows (Storyboard)</h3>
-                <p>I started with drawing simple user flows to visualize the users steps to accomplish a goal namely finding the right product and placing an order. I drew everything that came to my mind and looking for other solutions that might help eliminating
-                    pain points.</p>
+                    <h3>User Flows (Storyboard)</h3>
+                    <p>I started with drawing simple user flows to visualize the users steps to accomplish a goal namely finding the right product and placing an order. I drew everything that came to my mind and looking for other solutions that might help
+                        eliminating pain points.</p>
 
-                <a><img src="/public/assets/habitual/wireframes.png" style="max-width: 486px"></a>
-                <!-- Image of wireframe -->
+                    <a><img src="/public/assets/habitual/wireframes.png" style="max-width: 486px" loading="lazy"></a>
+                    <!-- Image of wireframe -->
 
-                <p>I turned these sketched-out user flows into more structured maps in Miro.</p>
+                    <p>I turned these sketched-out user flows into more structured maps in Miro.</p>
 
-                <a><img src="/public/assets/habitual/userflow2.png"></a>
-                <a><img src="/public/assets/habitual/userflow3.png"></a>
-                <!-- Image of miro user flows -->
+                    <a><img src="/public/assets/habitual/userflow2.png" loading="lazy"></a>
+                    <a><img src="/public/assets/habitual/userflow3.png" loading="lazy"></a>
+                    <!-- Image of miro user flows -->
 
-                <p>I created a sitemap to help guide my user flows.</p>
+                    <p>I created a sitemap to help guide my user flows.</p>
 
-                <a><img src="/public/assets/habitual/sitemap.png" style="max-width: 450px"></a>
-                <!-- Image of miro table -->
+                    <a><img src="/public/assets/habitual/sitemap.png" style="max-width: 450px" loading="lazy"></a>
+                    <!-- Image of miro table -->
 
-
-                <h3>Wireframes</h3>
-                <p>From there I started to design low-fidelity wireframes in Figma.</p>
-                <div>
-                    <!-- All Figma wireframes -->
-                    <a><img src="/public/assets/habitual/wireframe1.png" style="max-width: 550px"></a>
-                    <a><img src="/public/assets/habitual/wireframe2.png" style="max-width: 550px"></a>
-                    <a><img src="/public/assets/habitual/wireframe3.png" style="max-width: 550px"></a>
-                    <a><img src="/public/assets/habitual/wireframe4.png" style="max-width: 550px"></a>
-                    <a><img src="/public/assets/habitual/wireframe5.png" style="max-width: 550px"></a>
-                    <a><img src="/public/assets/habitual/wireframe6.png" style="max-width: 550px"></a>
                 </div>
-                <h3>Style Guide</h3>
-                <p>Another painpoint is the blant UI of Amazon’s webpage. Because Max and Lindsay are young people I decided to give the app a clean and light design with modern typography and a small color variation to prevent the page from feeling overloaded
-                    and more appealing with rounded shapes. I turned every element into components in Figma to build a flexible prototype.</p>
 
-                <!-- All Figma style guide -->
-                <p><strong>Typography</strong></p>
-                <a><img src="/public/assets/habitual/typography.png"></a>
-                <p><strong>Color palette</strong></p>
-                <a><img src="/public/assets/habitual/colorpalette.png" style="max-width: 361px"></a>
-                <p><strong>Buttons</strong></p>
-                <a><img src="/public/assets/habitual/buttons.png" style="max-width: 271px"></a>
-                <p><strong>Cards/Products</strong></p>
-                <a><img src="/public/assets/habitual/cards.png" style="max-width: 450px"></a>
+                <div class="hidden-animate">
+                    <h3>Wireframes</h3>
+                    <p>From there I started to design low-fidelity wireframes in Figma.</p>
+                    <div>
+                        <!-- All Figma wireframes -->
+                        <a><img src="/public/assets/habitual/wireframe1.png" style="max-width: 550px" loading="lazy"></a>
+                        <a><img src="/public/assets/habitual/wireframe2.png" style="max-width: 550px" loading="lazy"></a>
+                        <a><img src="/public/assets/habitual/wireframe3.png" style="max-width: 550px" loading="lazy"></a>
+                        <a><img src="/public/assets/habitual/wireframe4.png" style="max-width: 550px" loading="lazy"></a>
+                        <a><img src="/public/assets/habitual/wireframe5.png" style="max-width: 550px" loading="lazy"></a>
+                        <a><img src="/public/assets/habitual/wireframe6.png" style="max-width: 550px" loading="lazy"></a>
+                    </div>
+                </div>
+                <div class="hidden-animate">
+                    <h3>Style Guide</h3>
+                    <p>Another painpoint is the blant UI of Amazon’s webpage. Because Max and Lindsay are young people I decided to give the app a clean and light design with modern typography and a small color variation to prevent the page from feeling
+                        overloaded and more appealing with rounded shapes. I turned every element into components in Figma to build a flexible prototype.</p>
 
-                <div class="firstIteration-container">
+                    <!-- All Figma style guide -->
+                    <p><strong>Typography</strong></p>
+                    <a><img src="/public/assets/habitual/typography.png" loading="lazy"></a>
+                    <p><strong>Color palette</strong></p>
+                    <a><img src="/public/assets/habitual/colorpalette.png" style="max-width: 361px" loading="lazy"></a>
+                    <p><strong>Buttons</strong></p>
+                    <a><img src="/public/assets/habitual/buttons.png" style="max-width: 271px" loading="lazy"></a>
+                    <p><strong>Cards/Products</strong></p>
+                    <a><img src="/public/assets/habitual/cards.png" style="max-width: 450px" loading="lazy"></a>
 
-
+                </div>
+                <div class="firstIteration-container hidden-animate">
                     <div class="text">
                         <h3>Prototyping</h3>
                         <br>
@@ -267,50 +285,55 @@
                     <!-- Figma first iteration -->
                     <div class="firstIteration">
                         <div class="two">
-                            <a><img src="/public/assets/habitual/firstiteration1.png"></a>
+                            <a><img src="/public/assets/habitual/firstiteration1.png" loading="lazy"></a>
 
-                            <a><img src="/public/assets/habitual/firstiteration2.png"></a>
+                            <a><img src="/public/assets/habitual/firstiteration2.png" loading="lazy"></a>
 
                         </div>
                         <div class="three">
-                            <a><img src="/public/assets/habitual/firstiteration3.png"></a>
+                            <a><img src="/public/assets/habitual/firstiteration3.png" loading="lazy"></a>
 
-                            <a><img src="/public/assets/habitual/firstiteration4.png"></a>
+                            <a><img src="/public/assets/habitual/firstiteration4.png" loading="lazy"></a>
 
-                            <a><img src="/public/assets/habitual/firstiteration5.png"></a>
+                            <a><img src="/public/assets/habitual/firstiteration5.png" loading="lazy"></a>
 
                         </div>
                     </div>
                 </div>
 
-                <p><strong>Second Iteration</strong></p>
-                <!-- Figma second iteration -->
-                <div class="secondIteration">
-                    <a><img src="/public/assets/habitual/seconditeration1.png"></a>
-                    <a><img src="/public/assets/habitual/seconditeration2.png"></a>
-                    <a><img src="/public/assets/habitual/seconditeration3.png"></a>
-                </div>
-                <p>-> Take away:</p>
-                <ul>
-                    <li>Background still distracting</li>
-                    <li>Search bar isn’t reachable/accessable enough and therefore isn’t as striking as intended</li>
-                    <li>Panels should be subdivided in cards to make every product look distinct and on it’s own instead of a big cluster</li>
-                </ul>
-                <p>-> Corrections:</p>
-                <ul>
-                    <li>Removing the background image and replacing it by a light grey blueish solid color</li>
-                    <li>Search bar becomes an icon and is placed in the nav bar at the bottom. To strike enough attention the icon gets a contrasting color</li>
-                    <li>Every panel gets its own space/border so it gets a card-like appearance</li>
-                </ul>
+                <div class="hidden-animate">
+                    <p><strong>Second Iteration</strong></p>
+                    <!-- Figma second iteration -->
+                    <div class="secondIteration">
+                        <a><img src="/public/assets/habitual/seconditeration1.png" loading="lazy"></a>
+                        <a><img src="/public/assets/habitual/seconditeration2.png" loading="lazy"></a>
+                        <a><img src="/public/assets/habitual/seconditeration3.png" loading="lazy"></a>
+                    </div>
 
-                <p><strong>Third Iteration (Final)</strong></p>
-                <!-- Figma videos/animations -->
+                    <p>-> Take away:</p>
+                    <ul>
+                        <li>Background still distracting</li>
+                        <li>Search bar isn’t reachable/accessable enough and therefore isn’t as striking as intended</li>
+                        <li>Panels should be subdivided in cards to make every product look distinct and on it’s own instead of a big cluster</li>
+                    </ul>
+                    <p>-> Corrections:</p>
+                    <ul>
+                        <li>Removing the background image and replacing it by a light grey blueish solid color</li>
+                        <li>Search bar becomes an icon and is placed in the nav bar at the bottom. To strike enough attention the icon gets a contrasting color</li>
+                        <li>Every panel gets its own space/border so it gets a card-like appearance</li>
+                    </ul>
+                </div>
+                <div class="hidden-animate">
+                    <p><strong>Third Iteration (Final)</strong></p>
+                    <!-- Figma videos/animations -->
+                </div>
 
             </section>
 
             <div id="LearningsScroll" style="width: 100px; height: 50px;"></div>
 
-            <section id="Learnings">
+            <section id="Learnings" class="hidden-animate">
+
                 <h2>Learnings</h2>
 
                 <p>As this was my first UX/UI project I’ve learned a lot about design thinking and how to go through every ideation step. I worked myself into Figma and Miro as design tools and had to take a lot of research on many different topics. It was

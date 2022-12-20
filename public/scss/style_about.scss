@@ -6,6 +6,23 @@
     gap: 14px;
 }
 
+.hidden-animate-left {
+    opacity: 0;
+    transition: all 1.5s;
+    transform: translateX(-50%);
+}
+
+.hidden-animate-right {
+    opacity: 0;
+    transition: all 1.5s;
+    transform: translateX(50%);
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 body {
     background-image: url(/public/assets/backgroundmobile.png);
     background-repeat: no-repeat;
@@ -14,6 +31,7 @@ body {
 }
 
 header {
+    z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,7 +114,7 @@ main {
     flex-direction: column;
     padding: 10px 0px 120px 0px;
     margin: auto; //So that it's centered in body
-    gap: 20px;
+    gap: 80px;
     max-width: 18.875rem; //309px //beschränkt den Inhalt
     .project-container {
         display: flex;
@@ -156,7 +174,7 @@ footer {
     }
     main {
         max-width: 714px; //588px
-        gap: 70px;
+        gap: 140px;
         padding: 40px 0px 120px 0px;
     }
     header {
@@ -227,7 +245,7 @@ footer {
     }
     main {
         max-width: 714px; //588px
-        gap: 70px;
+        gap: 200px;
         padding: 40px 0px 120px 0px;
     }
     header {

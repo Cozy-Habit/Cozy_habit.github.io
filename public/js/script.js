@@ -109,6 +109,22 @@ if (document.getElementById(habitual)) {
     document.querySelector("nav .work").classList.add("active");
     console.log("working");
 }
+
+
+//FADE-IN ANIMATION
+const observer = new IntersectionObserver((entries) => { //The problem was that the css classes where not in the right order which is why the one dominated the other
+    entries.forEach((entry) => {
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            console.log(entry.target.classList)
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden-animate-Y, .hidden-animate-X');
+hiddenElements.forEach((el) => observer.observe(el));
+
 //It initially didn't work because the script laoded before the html content
 //which is why navToggle is null
 //Solution: put 'defer' where script is defined in header

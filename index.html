@@ -16,7 +16,7 @@
 
 <body id="index">
     <header class="header">
-        <img class="logo" src="/public/assets/logo.png" alt="logo">
+        <img class="logo" src="/public/assets/logo.png" alt="logo" loading="lazy">
         <nav class="primary-navigation" data-visible="false" alt="navigation">
             <a class="home" alt="Home">Home</a>
             <a class="work" alt="My Work">My Work</a>
@@ -50,13 +50,14 @@
     </header>
 
     <main>
+
         <section id="home">
             <br>
             <br>
             <!-- <br> br needed to add content to hero so that home nav stays in focus -->
-            <div class="hero-container">
+            <div class="hidden-animate-Y hero-container">
                 <div class="hero">
-                    <img class="profile-img" src="/public/assets/hero-img.png" alt="profile image">
+                    <img class="profile-img" src="/public/assets/hero-img.png" alt="profile image" loading="lazy">
                     <div class="hero-text">
                         <h1>Hi, I’m Sophia Precker,</h1>
                         <h1>I am a self-taught <br>
@@ -65,7 +66,7 @@
                     </div>
                 </div>
                 <a class="button" alt="button check out my work">Check out my work</a>
-                <img class="arrow-img" src="/public/assets/arrow.png" alt="downward pointing arrow">
+                <img class="arrow-img" src="/public/assets/arrow.png" alt="downward pointing arrow" loading="lazy">
             </div>
         </section>
 
@@ -73,68 +74,72 @@
         <div id=mywork style="width: 100px; height: 1px;"></div>
 
         <!-- MY WORK SECTION -->
-        <section id="work">
-            <div class="mywork-container">
 
-                <h2>My Work</h2>
 
-                <div class="project-container">
-                    <div class="project">
-                        <a href="https://cozy-habit.github.io/habitual.html"><img class="project-img" src="/public/assets/habitual/habitual.png" alt="image of mock-up"></a>
-                        <h3>Habitual - App</h3>
-                        <p>This case study is the result of a challenge given by the instructors of the Udemy course for UX/UI.</p>
-                        <a class="button" id="habitual" alt="button case study">Case study</a>
-                    </div>
-                    <div class="project">
-                        <img class="project-img" src="/public/assets/hevy/hevy.png" alt="coming soon image">
-                        <h3>Hevy - App [Redesign]</h3>
-                        <!-- <p>Lorem ipsum dolor sit amet consectetur. Egestas sit est in mollis.</p>-->
-                        <a id="button-inactive" alt="inactive button case study">Case study</a>
-                    </div>
-                    <!-- 
+
+
+
+        <div class="project-container">
+            <h2 class="hidden-animate-Y">My Work</h2>
+            <div class="project hidden-animate-Y">
+                <a href="https://cozy-habit.github.io/habitual.html"><img class="project-img" src="/public/assets/habitual/habitual.png" alt="image of mock-up" loading="lazy"></a>
+                <h3>Habitual - App</h3>
+                <p>This case study is the result of a challenge given by the instructors of the Udemy course for UX/UI.</p>
+                <a class="button" id="habitual" alt="button case study">Case study</a>
+            </div>
+
+            <div class="project hidden-animate-Y">
+                <img class="project-img" src="/public/assets/hevy/hevy.png" alt="coming soon image" loading="lazy">
+                <h3>Hevy - App [Redesign]</h3>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur. Egestas sit est in mollis.</p>-->
+                <a id="button-inactive" alt="inactive button case study">Case study</a>
+            </div>
+            <!-- 
                 <div class="project">
                     <h3>Villa Sunshine - Childcare Website</h3>
                     <p>Lorem ipsum dolor sit amet consectetur. Egestas sit est in mollis.</p>
                     <a class="button">Case study</a>
                     <a class="button">Visit Website</a>
                 </div> -->
-                </div>
-            </div>
-        </section>
+        </div>
+
+
         <!-- SKILL SECTION -->
+
         <div class="skill-container">
             <div class="banner"></div>
-            <h4>Design tools I use</h4>
-            <div class="skills">
+            <h4 class="hidden-animate-X">Design tools I use</h4>
+            <div class="skills hidden-animate-X">
                 <div class="icon-text">
-                    <img class="skill-icon" src="/public/assets/paper.png" alt="Pen and Paper">
+                    <img class="skill-icon" src="/public/assets/paper.png" alt="Pen and Paper" loading="lazy">
                     <span>Pen & Paper</span>
                 </div>
                 <div class="icon-text">
-                    <img class="skill-icon" src="/public/assets/figma.png" alt="Figma">
+                    <img class="skill-icon" src="/public/assets/figma.png" alt="Figma" loading="lazy">
                     <span>Figma</span>
                 </div>
                 <div class="icon-text">
-                    <img class="skill-icon" src="/public/assets/miro.png" alt="Miro">
+                    <img class="skill-icon" src="/public/assets/miro.png" alt="Miro" loading="lazy">
                     <span>Miro</span>
                 </div>
             </div>
 
 
+
             <section>
-                <h4>Languages I speak</h4>
-                <div class="skills-no-wrap">
+                <h4 class=" hidden-animate-X">Languages I speak</h4>
+                <div class="skills-no-wrap  hidden-animate-X">
                     <div class="skills">
                         <div class="icon-text">
-                            <img class="skill-icon" src="/public/assets/html.png" alt="html">
+                            <img class="skill-icon" src="/public/assets/html.png" alt="html" loading="lazy">
                             <span>HTML</span>
                         </div>
                         <div class="icon-text">
-                            <img class="skill-icon" src="/public/assets/css.png" alt="css / scss">
+                            <img class="skill-icon" src="/public/assets/css.png" alt="css / scss" loading="lazy">
                             <span>S/CSS</span>
                         </div>
                         <div class="icon-text">
-                            <img class="skill-icon" src="/public/assets/sass.png" alt="Sass">
+                            <img class="skill-icon" src="/public/assets/sass.png" alt="Sass" loading="lazy">
                             <span>Sass</span>
                         </div>
                     </div>
@@ -142,43 +147,44 @@
 
                     <div class="skills">
                         <div class="icon-text">
-                            <img class="skill-icon" src="/public/assets/js.png" alt="javascript">
+                            <img class="skill-icon" src="/public/assets/js.png" alt="javascript" loading="lazy">
                             <span>JavaScript</span>
                         </div>
                         <div class="icon-text">
-                            <img class="skill-icon" src="/public/assets/git.png" alt="git">
+                            <img class="skill-icon" src="/public/assets/git.png" alt="git" loading="lazy">
                             <span>Git</span>
                         </div>
                     </div>
                 </div>
 
 
-                <h4>Dev tools I use</h4>
-                <div class="skills">
+                <h4 class=" hidden-animate-X">Dev tools I use</h4>
+                <div class="skills hidden-animate-X">
                     <div class="icon-text">
-                        <img class="skill-icon" src="/public/assets/vsc.png" alt="visual studio code">
+                        <img class="skill-icon" src="/public/assets/vsc.png" alt="visual studio code" loading="lazy">
                         <span>VSC</span>
                     </div>
                     <div class="icon-text">
-                        <img class="skill-icon" src="/public/assets/github.png" alt="github">
+                        <img class="skill-icon" src="/public/assets/github.png" alt="github" loading="lazy">
                         <span>GitHub</span>
                     </div>
                 </div>
+            </section>
         </div>
-        </section>
 
         <!-- CITE SECTION -->
 
 
-        <div class="cite-container">
-            <span class="fancy-dots">...</span>
-            <p>“Design is not just what it looks like & feels like. Design is how it works.” <br> <span>- Steve Jobs</span></p>
+        <section class="hidden-animate-Y">
+            <div class="cite-container">
+                <span class="fancy-dots">...</span>
+                <p>“Design is not just what it looks like & feels like. Design is how it works.” <br> <span>- Steve Jobs</span></p>
 
-            <p>”Design to communicate, not just decorate."<br> <span>- Tony Stanton</span></p>
+                <p>”Design to communicate, not just decorate."<br> <span>- Tony Stanton</span></p>
 
-            <p>”Quality isn’t expensive. It’s priceless.”</p>
-        </div>
-
+                <p>”Quality isn’t expensive. It’s priceless.”</p>
+            </div>
+        </section>
 
 
 
