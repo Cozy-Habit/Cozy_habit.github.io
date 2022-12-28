@@ -248,6 +248,11 @@ main {
     margin: auto;
 }
 
+.thirdIteration {
+    margin: auto;
+    max-width: 250px;
+}
+
 //For spacing the content
 section {
     display: flex;
@@ -364,6 +369,14 @@ footer {
         .two,
         .three {
             width: 12rem;
+        }
+    }
+    .thirdIteration {
+        margin: auto;
+        max-width: unset;
+        img {
+            width: fit-content;
+            max-width: 12rem;
         }
     }
     footer {
